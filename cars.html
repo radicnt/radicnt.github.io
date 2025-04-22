@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cars</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+      transition: transform 0.2s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="dev.html">Dev</a>
+    <a href="cars.html">Cars</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="content">
+    <h2>My Car</h2>
+    <p>2009 Pontiac Pursuit G5 Sedan — I4 engine, modded with love and precision. A passion project that keeps evolving.</p>
+
+    <h3>Interior Mods</h3>
+    <p>Every detail counts. From carbon fiber trims to my hula girl, it’s a vibe inside and out.</p>
+    <div class="gallery">
+      <img src="car1.jpg" alt="Interior Shot 1" />
+      <img src="car2.jpg" alt="Interior Shot 2" />
+      <img src="car3.jpg" alt="Interior Shot 3" />
+    </div>
+
+    <h2>Dream Garage</h2>
+    <p>The cars that stay rent-free in my head:</p>
+    <ul>
+      <li>Hyundai Genesis Coupe — the dream coupe, aggressive and smooth.</li>
+      <li>Nissan 350z / 370z — raw power and timeless lines.</li>
+      <li>Infiniti G35 / G37 — luxury meets performance.</li>
+      <li>Audi A5 Quattro Coupe — that clean Euro feel.</li>
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
